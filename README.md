@@ -7,7 +7,7 @@ The **mTxServ SDK for PHP** enables PHP developers to easily integrate [our API]
 ## Installation
 We recommend Composer for managing dependencies. Installing is as easy as:
 
-    $ php composer.phar require mtxserv/api-sdk-php
+    $ php composer.phar require mtxserv/mtxserv-php
 
 <!--- END API -->
 

@@ -1,0 +1,27 @@
+{
+    "name": "mtxserv/mtxserv-php",
+    "description": "The mTxServ API makes it easy for developers to communicate with your game/voice/hosting products",
+    "type": "library",
+    "keywords": ["mtxserv", "minecraft", "api"],
+    "license": "MIT",
+    "require": {
+        "guzzle/guzzle": "5.0.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.4.*"
+    },
+    "authors": [
+        {
+            "name": "Sébastien DIEUNIDOU",
+            "email": "s.dieunidou@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Mtxserv": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
