@@ -33,15 +33,13 @@ class Client extends \Guzzle\Service\Client
         $config = Collection::fromConfig($config, $defaults, $required);
         $client = new self($config->get('base_url'), $config);
         
-        $accessToken = Client::retrieveAccessToken($config);
-        
         // Set service description
         $serviceDescription = ServiceDescription::factory(__DIR__ . '/Resources/service.php');
         $client->setDescription($serviceDescription);
         
         // Add authentification
-        $client->getEventDispatcher()->addListener('request.before_send', function(\Guzzle\Common\Event $event) use ($accessToken) {
-            $event['request']->getQuery()->set('access_token', $accessToken);
+        $client->getEventDispatcher()->addListener('request.before_send', function(\Guzzle\Common\Event $event) use ($config) {
+            $event['request']->getQuery()->set('access_token', Client::retrieveAccessToken($config));
         });
         
         // Set user agent
