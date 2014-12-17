@@ -21,15 +21,15 @@ class ClientTest extends \Guzzle\Tests\GuzzleTestCase
         $this->assertEquals('https://www.mtxserv.fr/api/v1337/', $client->getBaseUrl());
     }
 
-//    public function testGetProducts()
-//    {
-//        $client = $this->getServiceBuilder()->get('mtxserv');
-//        $this->setMockResponse($client, array(
-//            'get_products'
-//        ));
-//        $response = $client->getProducts();
-//        
-//        $this->assertInternalType('array', $response);
-//        $this->assertSame(52975, $response[0]['id']);
-//    }
+    public function testGetProducts()
+    {
+        $client = $this->getServiceBuilder()->get('mtxserv');
+        $this->setMockResponse($client, array(
+            'get_products'
+        ));
+        $response = $client->getProducts();
+        
+        $this->assertInternalType('array', $response);
+        $this->assertSame(52975, $response[0]['id']);
+    }
 }

@@ -22,6 +22,7 @@ class Client extends \Guzzle\Service\Client
             'base_url'   => 'https://www.mtxserv.fr/api/{version}/',
             'version'    => 'v1',
             'grant_type' => 'https://www.mtxserv.fr/grants/api_key',
+            'has_authentification' => true,
         );
         
         $required = array(
@@ -38,9 +39,11 @@ class Client extends \Guzzle\Service\Client
         $client->setDescription($serviceDescription);
         
         // Add authentification
-        $client->getEventDispatcher()->addListener('request.before_send', function(\Guzzle\Common\Event $event) use ($config) {
-            $event['request']->getQuery()->set('access_token', Client::retrieveAccessToken($config));
-        });
+        if ($config->get('has_authentification')) {
+            $client->getEventDispatcher()->addListener('request.before_send', function(\Guzzle\Common\Event $event) use ($config) {
+                $event['request']->getQuery()->set('access_token', Client::retrieveAccessToken($config));
+            });
+        }
         
         // Set user agent
         $client->setUserAgent(sprintf('mTxServ SDK (%s)', $config['version']));

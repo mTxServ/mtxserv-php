@@ -15,7 +15,8 @@ Guzzle\Tests\GuzzleTestCase::setServiceBuilder(Guzzle\Service\Builder\ServiceBui
         'params' => array(
             'client_id'     => 'client_id',
             'client_secret' => 'client_secret',
-            'api_key'       => 'client_api_key'
+            'api_key'       => 'client_api_key',
+            'has_authentification' => false
         )
     )
 )));
