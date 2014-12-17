@@ -1,4 +1,14 @@
-api-sdk
-=======
+# mTxServ API SDK for PHP
 
-mTxServ API SDK
+The **mTxServ SDK for PHP** enables PHP developers to easily integrate [our API][mtxapi] into your applications.
+
+**NOTE**: This library is under heavy development and a lot of calls haven't been implemented yet. We're looking forward to any of your PR's.
+
+## Installation
+We recommend Composer for managing dependencies. Installing is as easy as:
+
+    $ php composer.phar require mtxserv/api-sdk-php
+
+<!--- END API -->
+
+[mtxapi]: https://www.mtxserv.fr/mtxserv-api
