@@ -70,8 +70,12 @@ class Client extends \Guzzle\Service\Client
         $query->set('client_secret', $config->get('client_secret'));
         $query->set('api_key', $config->get('api_key'));
         
-        $response = $request->send();
-        $json = $response->json();
+        try {
+            $response = $request->send();
+            $json = $response->json();
+        } catch (\Guzzle\Http\Exception\BadResponseException $ex) {
+            throw new \Exception('Bad authentification, please check your oauth settings');
+        }
         
         return $json['access_token'];
     }
