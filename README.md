@@ -1,6 +1,6 @@
 # mTxServ SDK for PHP
 
-[![Build Status](https://secure.travis-ci.org/mtxserv/mtxserv-php.png)](https://secure.travis-ci.org/mtxserv/mtxserv-php)
+[![Build Status](https://travis-ci.org/mTxServ/mtxserv-php.svg)](https://travis-ci.org/mTxServ/mtxserv-php)
 
 The **mTxServ SDK for PHP** enables PHP developers to easily integrate [our API][mtxapi] into your applications.
 
