@@ -36,7 +36,7 @@ $client = \Mtxserv\Client::factory(array(
 
 $response = $client->getProducts(); 
 var_dump($response);
-
+```
 
 <!--- END API -->
 
