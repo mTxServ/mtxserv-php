@@ -1,4 +1,4 @@
-# mTxServ API SDK for PHP
+# mTxServ SDK for PHP
 
 The **mTxServ SDK for PHP** enables PHP developers to easily integrate [our API][mtxapi] into your applications.
 
