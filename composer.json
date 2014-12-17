@@ -5,7 +5,7 @@
     "keywords": ["mtxserv", "minecraft", "api"],
     "license": "MIT",
     "require": {
-        "guzzle/guzzle": "5.0.*"
+        "guzzle/guzzle": "~3.9"
     },
     "require-dev": {
         "phpunit/phpunit": "4.4.*"
