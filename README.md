@@ -34,8 +34,8 @@ $client = \Mtxserv\Client::factory(array(
     'api_key'       => 'YOUR_API_KEY'
 ));
 
-$response = $client->getProducts(); 
-var_dump($response);
+$products = $client->getProducts(); 
+var_dump($products);
 ```
 
 <!--- END API -->

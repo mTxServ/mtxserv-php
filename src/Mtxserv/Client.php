@@ -23,6 +23,7 @@ class Client extends \Guzzle\Service\Client
             'version'    => 'v1',
             'grant_type' => 'https://www.mtxserv.fr/grants/api_key',
             'has_authentification' => true,
+            'oauth2_token' => 'https://www.mtxserv.fr/oauth/v2/token'
         );
         
         $required = array(
@@ -60,7 +61,7 @@ class Client extends \Guzzle\Service\Client
      */
     static protected function retrieveAccessToken(Collection $config)
     {
-        $client = new \Guzzle\Http\Client('https://www.mtxserv.fr/oauth/v2/token');
+        $client = new \Guzzle\Http\Client($config->get('oauth2_token'));
         
         $request = $client->get();
 
