@@ -2,9 +2,6 @@
 
 namespace Mtxserv;
 
-use CommerceGuys\Guzzle\Plugin\Oauth2\Oauth2Plugin;
-use CommerceGuys\Guzzle\Plugin\Oauth2\GrantType\PasswordCredentials;
-use CommerceGuys\Guzzle\Plugin\Oauth2\GrantType\RefreshToken;
 use Guzzle\Common\Collection;
 use Guzzle\Service\Description\ServiceDescription;
 
