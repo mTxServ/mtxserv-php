@@ -32,4 +32,19 @@ class ClientTest extends \Guzzle\Tests\GuzzleTestCase
         $this->assertInternalType('array', $response);
         $this->assertSame(52975, $response[0]['id']);
     }
+
+    public function testGetAdmins()
+    {
+        $client = $this->getServiceBuilder()->get('mtxserv');
+        $this->setMockResponse($client, array(
+            'get_admins'
+        ));
+        $response = $client->getAdmins(array(
+            'id' => 54415
+        ));
+        
+        $this->assertInternalType('array', $response);
+        $this->assertSame(9204, $response[0]['id']);
+        $this->assertSame(54415, $response[0]['invoice_id']);
+    }
 }

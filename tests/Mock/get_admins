@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Server: nginx/1.2.1
+Content-Type: application/json
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.4.35-0+deb7u2
+Cache-Control: no-cache
+Date: Fri, 19 Dec 2014 11:00:48 GMT
+Allow: GET, POST
+Content-Encoding: gzip
+
+[{"id":9204,"invoice_id":54415,"user_id":33,"user_email":"snk@mtxserv.fr"}]
