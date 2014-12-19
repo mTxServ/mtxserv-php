@@ -1,12 +1,12 @@
 HTTP/1.1 200 OK
-Date: Wed, 17 Dec 2014 23:30:36 GMT
-Server: Apache/2.4.7 (Ubuntu)
-X-Powered-By: PHP/5.5.9-1ubuntu4.5
-Cache-Control: no-cache
-Allow: GET
-X-Debug-Token: 125b88
-X-Debug-Token-Link: /app_dev.php/_profiler/125b88
-Set-Cookie: hl=fr; expires=Thu, 17-Dec-2015 23:30:36 GMT; Max-Age=31536000; path=/
+Server: nginx/1.2.1
 Content-Type: application/json
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.4.35-0+deb7u2
+Cache-Control: no-cache
+Date: Fri, 19 Dec 2014 11:00:48 GMT
+Allow: GET
+Content-Encoding: gzip
 
 [{"id":52975,"created_at":"2014-10-31T17:49:21+0100","expire_at":"2015-02-01T17:50:04+0100","expire_at_in_day":45,"is_install":true,"offer_id":24,"offer_name":"Hebergement 2000  Mo","type_id":3,"type_name":"Hebergement web","address":"http:\/\/srvlist.mtxserv.fr","picture":"https:\/\/www.mtxserv.fr\/uploads\/offert\/0a29f7d883506f68a60489f0a0930056371a7a51.png","extendable":true,"is_owner":true,"offer_amount":0},{"id":53167,"created_at":"2014-11-05T13:06:56+0100","expire_at":"2015-01-05T13:10:03+0100","expire_at_in_day":18,"is_install":true,"offer_id":24,"offer_name":"Hebergement 2000  Mo","type_id":3,"type_name":"Hebergement web","address":"http:\/\/emailling.mtxserv.fr","picture":"https:\/\/www.mtxserv.fr\/uploads\/offert\/0a29f7d883506f68a60489f0a0930056371a7a51.png","extendable":true,"is_owner":true,"offer_amount":0},{"id":54415,"created_at":"2014-12-02T19:57:25+0100","expire_at":"2015-01-02T20:00:03+0100","expire_at_in_day":15,"is_install":true,"offer_id":127,"offer_name":"Minecraft 2 slots V4","type_id":1,"type_name":"Serveur de jeux","picture":"\/bundles\/hostmemanagergame\/img\/game\/minecraft.png","extendable":true,"is_owner":true,"offer_amount":2,"offer_amount_day":0.066666666666667},{"id":54423,"created_at":"2014-12-03T12:21:26+0100","expire_at":"2014-12-19T12:57:37+0100","expire_at_in_day":1,"is_install":true,"offer_id":131,"offer_name":"Minecraft 10 slots V4","type_id":1,"type_name":"Serveur de jeux","picture":"\/bundles\/hostmemanagergame\/img\/game\/minecraft.png","extendable":true,"is_owner":true,"offer_amount":7.5,"offer_amount_day":0.25},{"id":54416,"created_at":"2014-12-02T19:57:25+0100","expire_at":"2015-01-02T20:00:03+0100","expire_at_in_day":15,"is_install":true,"offer_id":18,"offer_name":"Mumble","type_id":2,"type_name":"Serveur vocal","address":"mumble1.mtxserv.fr:50344","picture":"https:\/\/www.mtxserv.fr\/uploads\/offert\/8fb50dc0877482e7ff2bd36a7a872fc2c75dc833.png","related_game_id":20719,"extendable":false,"is_owner":true,"offer_amount":0.08,"offer_amount_day":0.13333333333333},{"id":54424,"created_at":"2014-12-03T12:21:26+0100","expire_at":"2014-12-19T12:57:37+0100","expire_at_in_day":1,"is_install":true,"offer_id":18,"offer_name":"Mumble","type_id":2,"type_name":"Serveur vocal","address":"mumble1.mtxserv.fr:50143","picture":"https:\/\/www.mtxserv.fr\/uploads\/offert\/8fb50dc0877482e7ff2bd36a7a872fc2c75dc833.png","related_game_id":20720,"extendable":false,"is_owner":true,"offer_amount":0.08,"offer_amount_day":0.13333333333333},{"id":21218,"created_at":"2013-01-30T20:01:48+0100","expire_at":"2018-10-02T00:00:00+0200","expire_at_in_day":1383,"is_install":true,"offer_id":97,"offer_name":"Teamspeak","type_id":2,"type_name":"Serveur vocal","address":"teamspeak1.mtxserv.fr:9987","picture":"https:\/\/www.mtxserv.fr\/uploads\/offert\/018ff401993244d44c5a8f6e05135de7796c533b.png","extendable":true,"is_owner":true,"offer_amount":0.16,"offer_amount_day":0.16}]

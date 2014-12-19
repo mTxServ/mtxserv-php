@@ -24,7 +24,7 @@ $client = \Mtxserv\Client::factory(array(
 ));
 ```
 
-### Usage
+### Get products
 
 ```php
 <?php
@@ -37,6 +37,23 @@ $client = \Mtxserv\Client::factory(array(
 
 $products = $client->getProducts(); 
 var_dump($products);
+```
+
+### Get admins
+
+```php
+<?php
+
+$client = \Mtxserv\Client::factory(array(
+    'client_id'     => 'YOUR_CLIENT_ID',
+    'client_secret' => 'YOUR_CLIENT_SECRET',
+    'api_key'       => 'YOUR_API_KEY'
+));
+
+$administrators = $client->getAdmins(array(
+    'id' => 1337 # required
+)); 
+var_dump($administrators);
 ```
 
 <!--- END API -->

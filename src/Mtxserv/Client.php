@@ -33,7 +33,10 @@ class Client extends \Guzzle\Service\Client
         $client = new self($config->get('base_url'), $config);
         
         // Set service description
-        $serviceDescription = ServiceDescription::factory(__DIR__ . '/Resources/service.php');
+        $serviceDescription = ServiceDescription::factory(__DIR__ . '/Resources/product.php');
+        $client->setDescription($serviceDescription);
+        
+        $serviceDescription = ServiceDescription::factory(__DIR__ . '/Resources/admin.php');
         $client->setDescription($serviceDescription);
         
         // Add authentification
