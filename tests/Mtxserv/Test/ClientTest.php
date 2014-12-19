@@ -3,11 +3,12 @@
 namespace Mtxserv\Test;
 
 use Mtxserv\Client;
+use Guzzle\Tests\GuzzleTestCase;
 
 /**
  * Client Test
  */
-class ClientTest extends \Guzzle\Tests\GuzzleTestCase
+class ClientTest extends GuzzleTestCase
 {
     public function testFactoryInitializesClient()
     {
@@ -19,32 +20,5 @@ class ClientTest extends \Guzzle\Tests\GuzzleTestCase
         ));
         
         $this->assertEquals('https://www.mtxserv.fr/api/v1337/', $client->getBaseUrl());
-    }
-
-    public function testGetProducts()
-    {
-        $client = $this->getServiceBuilder()->get('mtxserv');
-        $this->setMockResponse($client, array(
-            'get_products'
-        ));
-        $response = $client->getProducts();
-        
-        $this->assertInternalType('array', $response);
-        $this->assertSame(52975, $response[0]['id']);
-    }
-
-    public function testGetAdmins()
-    {
-        $client = $this->getServiceBuilder()->get('mtxserv');
-        $this->setMockResponse($client, array(
-            'get_admins'
-        ));
-        $response = $client->getAdmins(array(
-            'id' => 54415
-        ));
-        
-        $this->assertInternalType('array', $response);
-        $this->assertSame(9204, $response[0]['id']);
-        $this->assertSame(54415, $response[0]['invoice_id']);
     }
 }
