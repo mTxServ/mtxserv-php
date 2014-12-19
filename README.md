@@ -12,6 +12,8 @@ We recommend Composer for managing dependencies. Installing is as easy as:
 
     $ php composer.phar require "mtxserv/mtxserv-php:1.0.*@dev"
 
+## Usage
+
 ### Authorization with OAuth
 
 ```php
