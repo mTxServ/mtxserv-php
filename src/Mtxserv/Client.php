@@ -32,12 +32,10 @@ class Client extends \Guzzle\Service\Client
         $config = Collection::fromConfig($config, $defaults, $required);
         $client = new self($config->get('base_url'), $config);
         
-        // Set service description
-        $serviceDescription = ServiceDescription::factory(__DIR__ . '/Resources/product.php');
-        $client->setDescription($serviceDescription);
-        
-        $serviceDescription = ServiceDescription::factory(__DIR__ . '/Resources/admin.php');
-        $client->setDescription($serviceDescription);
+        // Set services descriptions
+        $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/product.php'));
+        $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/admin.php'));
+        $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/viewer.php'));
         
         // Add authentification
         if ($config->get('has_authentification')) {
