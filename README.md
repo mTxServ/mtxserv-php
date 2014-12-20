@@ -58,6 +58,26 @@ $product = $client->getProduct(array(
 var_dump($product);
 ```
 
+### Get game viewer
+
+```php
+<?php
+
+$client = \Mtxserv\Client::factory(array(
+    'client_id'     => 'YOUR_CLIENT_ID',
+    'client_secret' => 'YOUR_CLIENT_SECRET',
+    'api_key'       => 'YOUR_API_KEY'
+));
+
+$viewer = $client->getGameViewer(array(
+    'type' => 'GAME_SERVER_TYPE', # ex: minecraft
+    'ip'   => 'GAME_SERVER_IP',
+    'port' => GAME_SERVER_PORT
+)); 
+
+var_dump($viewer);
+```
+
 ### Get admins
 
 ```php
