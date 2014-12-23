@@ -45,7 +45,7 @@ class Client extends \Guzzle\Service\Client
         }
         
         // Set user agent
-        $client->setUserAgent(sprintf('mTxServ SDK (%s)', $config['version']));
+        $client->setUserAgent('mTxServ SDK PHP');
         
         return $client;
     }
