@@ -53,7 +53,7 @@ class Client extends \Guzzle\Service\Client
     /**
      * Retrieve access token
      * 
-     * @param Guzzle\Common\Collection $config
+     * @param Collection $config
      * 
      * @return string
      */
