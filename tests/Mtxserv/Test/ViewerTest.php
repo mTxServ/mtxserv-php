@@ -17,7 +17,7 @@ class ViewerTest extends GuzzleTestCase
             'ip'   => 'sandbox03.mtxserv.fr',
             'port' => 27030
         ));
-        
+
         $this->assertInternalType('array', $response);
         $this->assertSame(true, $response['is_online']);
         $this->assertSame('sandbox03.mtxserv.fr', $response['ip']);
