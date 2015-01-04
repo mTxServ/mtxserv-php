@@ -2,7 +2,7 @@
 
 return array(
     'name'        => 'mTxServ API Product',
-    
+
     'operations'  => array(
         'getProducts' => array(
             'httpMethod' => 'GET',

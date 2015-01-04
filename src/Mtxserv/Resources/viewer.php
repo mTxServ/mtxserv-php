@@ -2,7 +2,7 @@
 
 return array(
     'name'        => 'mTxServ API Viewer',
-    
+
     'operations'  => array(
         'getGameViewer' => array(
             'httpMethod' => 'GET',
