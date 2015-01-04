@@ -16,7 +16,7 @@ class ProductTest extends GuzzleTestCase
             'product/get_products'
         ));
         $response = $client->getProducts();
-        
+
         $this->assertInternalType('array', $response);
         $this->assertSame(52975, $response[0]['id']);
     }
@@ -30,7 +30,7 @@ class ProductTest extends GuzzleTestCase
         $response = $client->getProduct(array(
             'id' => 52975
         ));
-        
+
         $this->assertInternalType('array', $response);
         $this->assertSame(52975, $response['id']);
     }

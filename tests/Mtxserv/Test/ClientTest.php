@@ -18,10 +18,10 @@ class ClientTest extends GuzzleTestCase
             'api_key'       => 'API_KEY',
             'version'       => 'v1337'
         ));
-        
+
         $this->assertEquals('https://www.mtxserv.fr/api/v1337/', $client->getBaseUrl());
     }
-    
+
     public function testFactoryInitializesUserAgent()
     {
         $client = Client::factory(array(

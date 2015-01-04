@@ -2,7 +2,7 @@
 
 return array(
     'name'        => 'mTxServ API Admin',
-    
+
     'operations'  => array(
         'getAdmins' => array(
             'httpMethod' => 'GET',

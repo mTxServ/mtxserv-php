@@ -18,7 +18,7 @@ class AdminTest extends GuzzleTestCase
         $response = $client->getAdmins(array(
             'id' => 54415
         ));
-        
+
         $this->assertInternalType('array', $response);
         $this->assertSame(9204, $response[0]['id']);
         $this->assertSame(54415, $response[0]['invoice_id']);
