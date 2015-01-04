@@ -2,6 +2,8 @@
 
 [![Build Status](https://img.shields.io/travis/mTxServ/mtxserv-php.svg)](https://travis-ci.org/mTxServ/mtxserv-php)
 [![SensioLabsInsight](https://img.shields.io/sensiolabs/i/c34a7b35-4acc-4d1b-940f-7f16c59bc713.svg)](https://insight.sensiolabs.com/projects/c34a7b35-4acc-4d1b-940f-7f16c59bc713)
+[![Scrutinizer](https://scrutinizer-ci.com/g/mTxServ/mtxserv-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mTxServ/mtxserv-php)
+[![Scrutinizer Coverage](https://scrutinizer-ci.com/g/mTxServ/mtxserv-php/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mTxServ/mtxserv-php)
 
 
 The **mTxServ SDK for PHP** enables PHP developers to easily integrate [our API][mtxapi] into your applications.
