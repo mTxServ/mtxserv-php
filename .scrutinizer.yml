@@ -19,8 +19,7 @@ tools:
 
   # PHP Copy/Paste Detector
   php_cpd:
-    enabled: true
-    excluded_dirs: [vendor]
+    enabled: false
 
   # PHP CS Fixer
   php_cs_fixer:
