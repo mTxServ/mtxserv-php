@@ -36,6 +36,7 @@ class Client extends \Guzzle\Service\Client
         $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/product.php'));
         $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/admin.php'));
         $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/viewer.php'));
+        $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/game.php'));
         
         // Add authentification
         if ($config->get('has_authentification')) {
