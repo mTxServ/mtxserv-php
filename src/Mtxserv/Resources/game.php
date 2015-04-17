@@ -17,5 +17,18 @@ return array(
                 )
             )
         ),
+        'gameActionStop' => array(
+            'httpMethod' => 'POST',
+            'uri'        => 'game/{gameServerId}/actions/stop',
+            'summary'    => 'Stop a gameserver',
+             'parameters' => array(
+                'gameServerId' => array(
+                    'location'    => 'uri',
+                    'description' => 'GameServer ID',
+                    'type'        => 'integer',
+                    'required'    => true
+                )
+            )
+        ),
     )
 );
