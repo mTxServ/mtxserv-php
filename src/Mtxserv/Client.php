@@ -16,11 +16,11 @@ class Client extends \Guzzle\Service\Client
     public static function factory($config = array())
     {
         $defaults = array(
-            'base_url'   => 'https://www.mtxserv.fr/api/{version}/',
+            'base_url'   => 'https://mtxserv.com/api/{version}/',
             'version'    => 'v1',
-            'grant_type' => 'https://www.mtxserv.fr/grants/api_key',
+            'grant_type' => 'https://mtxserv.com/grants/api_key',
             'has_authentification' => true,
-            'oauth2_token' => 'https://www.mtxserv.fr/oauth/v2/token'
+            'oauth2_token' => 'https://mtxserv.com/oauth/v2/token'
         );
         
         $required = array(
