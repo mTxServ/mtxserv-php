@@ -2,7 +2,7 @@
     "name": "mtxserv/mtxserv-php",
     "description": "The mTxServ API makes it easy for developers to communicate with your game/voice/hosting products",
     "type": "library",
-    "keywords": ["mtxserv", "minecraft", "api"],
+    "keywords": ["mtxserv", "minecraft", "api", "gmod", "rust", "ark", "teamspeak"],
     "license": "MIT",
     "require": {
         "guzzle/guzzle": "~3.9"
@@ -17,11 +17,8 @@
         }
     ],
     "autoload": {
-        "psr-0": { "Mtxserv": "src/" }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
+        "psr-4": {
+            "Mtxserv\\": "src/"
         }
-    }
+    },
 }
